@@ -67,10 +67,6 @@ const scrapingProfile = () => {
     const elementResume = document.querySelector('section.pv-about-section > p')
     const resume = elementResume ? elementResume.innerText : '';
   
-    
-  
-    
-    
     console.log({ name, title, resume, linkedIn })
     
   })
