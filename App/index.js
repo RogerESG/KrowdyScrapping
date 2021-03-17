@@ -81,7 +81,7 @@ const scrapingProfile = () => {
         const elementCargo =  elementExperienceSection.children[i].querySelector('h3.t-16.t-black.t-bold');
         const cargo = elementCargo ? elementCargo.innerText : '';
         // Se ubica la posición del duración según la posición y se inserta en una variable "duration".
-        const elementWorkTime =  elementExperienceSection.children[i].querySelector('h4.pv-entity__date-range.t-14.t-black--light.t-normal span:not([class])'); // Otro uso ":not(.completed):not(.selected)"
+        const elementWorkTime =  elementExperienceSection.children[i].querySelector('h4.pv-entity__date-range.t-14.t-black--light.t-normal span:not([class])'); // También "span + span" Otro uso ":not(.completed):not(.selected)"
         const workTime = elementWorkTime ? elementWorkTime.innerText : '';  
         // Se introduce todos los datos dentro de experience.
         experience.push({cargo, workTime});
